@@ -26,13 +26,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Webgl Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Webgl Build.data.gz",
-        frameworkUrl: buildUrl + "/Webgl Build.framework.js.gz",
-        codeUrl: buildUrl + "/Webgl Build.wasm.gz",
+        dataUrl: buildUrl + "/Webgl Build.data",
+        frameworkUrl: buildUrl + "/Webgl Build.framework.js",
+        codeUrl: buildUrl + "/Webgl Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "DanielCorbiBoldrin",
         productName: "SkyRunner",
-        productVersion: "0.1",
+        productVersion: "0.2",
       };
 
       var container = document.querySelector("#unity-container");
@@ -45,8 +45,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "720px";
       }
       loadingBar.style.display = "block";
 
